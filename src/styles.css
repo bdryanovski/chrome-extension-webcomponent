@@ -1,0 +1,111 @@
+:host {
+  display: flex;
+  color: rgba(31, 41, 55, 1);
+  background-color: rgba(229, 231, 235, 1);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border: 0px solid rgba(229, 231, 235, 1);
+}
+
+button {
+  margin: 0px;
+  padding: 0px;
+  line-height: inherit;
+  color: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: none;
+  appearance: button;
+  text-transform: none;
+}
+
+.icon {
+  color: rgba(75, 85, 99, 1);
+  fill: currentcolor;
+  width: 1rem;
+  height: 1rem;
+  display: block;
+  vertical-align: middle;
+}
+
+.container {
+  width: 100%;
+  padding: 0 0.75rem;
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+.card {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 0.25rem;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.title {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+.form {
+  display: flex;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  align-items: center;
+}
+
+.input {
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(229, 231, 235, 1);
+  border-radius: 0.125rem;
+  width: 100%;
+  margin-top: 1rem;
+  line-height: inherit;
+  color: inherit;
+}
+
+.tasks {
+  overflow: auto;
+  max-height: 16rem;
+  list-style: none;
+  margin: 0.2rem 0px 0px 0px;
+  padding: 0px;
+}
+
+.task {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin-top: 0.75rem;
+}
+
+.task-content {
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+.task-done {
+  text-decoration: line-through;
+}
+
+.task-edit {
+  font-weight: 600;
+  padding: 0.25rem 1rem;
+  border-style: none;
+  width: 100%;
+}
+
+.task-edit:focus {
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+}

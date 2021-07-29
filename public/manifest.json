@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Experimental New Tab Extension",
+  "version": "0.0.0",
+  "description": "Provide playground code",
+  "icons": {
+    "16": "static/icon16.png",
+    "48": "static/icon48.png",
+    "128": "static/icon128.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": [
+    "storage"
+  ]
+}
